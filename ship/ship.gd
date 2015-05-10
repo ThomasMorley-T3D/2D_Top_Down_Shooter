@@ -2,7 +2,7 @@
 # 
 # This is a component based 2D Shooter game, part of the "Let's Make a Game..." Series Tutorials by: Tom Morley URL:
 # 
-# *** Special thanks to @@@@ @@@@ @@@@ for helping me complete the code for this game. ***
+# *** Special thanks to Kyle Luce for code help and bug smashing on this game. ***
 # 
 # Graphics used in this game were provided by:
 #	Ship - http://millionthvector.blogspot.com/p/free-sprites.html		CC 4.0
@@ -154,7 +154,7 @@ func run_game(delta):
 				get_node(laser).queue_free()
 			
 						
-						#print( get_node(laser).get_path()) 
+			#print( get_node(laser).get_path())  
 		if (get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").is_colliding()):
 			 
 			#  remove the rock_root from the array and delete the child from the main scene
@@ -251,7 +251,7 @@ func make_rock():
 	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("bottom_ boundary"))
 	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("top_ boundary"))
 	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("left_ boundary"))
-	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("right_boundary"))
+	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("right_bounda ry"))
 	rock_instance.get_node("RigidBody2D").set_pos(Vector2(rand_range(110,1325),rand_range(-200,-250)))
 	rock_instance.get_node("RigidBody2D").set_linear_velocity(rock_velocity + Vector2(rand_range(-90,90),0))
 	if rand_range(0,2.1) < 1:
