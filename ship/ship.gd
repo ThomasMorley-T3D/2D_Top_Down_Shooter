@@ -149,37 +149,37 @@ func run_game(delta):
 			if laser_pos.y + 100 < get_node("KinematicBody2D").get_pos().y:
 				get_node(str(laser) + "/KinematicBody2D").set_layer_mask(1)
 			#remove the laser_root from the array and delete the child from the main scene if off top of screen
-			if laser_pos.y < -10:
+			if laser_pos.y < -100:
 				laser_array.remove(laser_array.find(laser))
 				get_node(laser).queue_free()
+				
+				
+		if get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D") != null: 
+			if (get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").is_colliding()):
+				 
+				#  remove the rock_root from the array and delete the child from the main scene
+				print(laser_array ) 
+				print(rock_array)
+				if get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").get_collider() != null:
+					var node_path = get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").get_collider().get_parent().get_path()
+					print(get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").get_collider().get_parent().get_path())
+					rock_array.remove(rock_array.find(get_node(node_path).get_name()))
+					get_node(node_path).queue_free()
+				
+				#remove the laser_root from the array and delete the child from the main scene
+				laser_array.remove(laser_array.find(laser))
+				get_node(laser).queue_free()
+				
+				get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_explosion/").play("explosion",false)
 			
-						
-			#print( get_node(laser).get_path())  
-		if (get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").is_colliding()):
-			 
-			#  remove the rock_root from the array and delete the child from the main scene
-			print(laser_array ) 
-			print(rock_array)
-			if get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").get_collider() != null:
-				var node_path = get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").get_collider().get_parent().get_path()
-				print(get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").get_collider().get_parent().get_path())
-				rock_array.remove(rock_array.find(get_node(node_path).get_name()))
-				get_node(node_path).queue_free()
-			
-			#remove the laser_root from the array and delete the child from the main scene
-			laser_array.remove(laser_array.find(laser))
-			get_node(laser).queue_free()
-			
-			get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_explosion/").play("explosion",false)
-
-			
-			##################### SCORE!!!!!!!!!! ##############################3
-			score += 10
-			increase_gui_score(score)
-		else:
-			get_node(str(laser) + "/KinematicBody2D").move(Vector2(0,0))
-
-	
+				
+				##################### SCORE!!!!!!!!!! ##############################3
+				score += 10
+				increase_gui_score(score)
+			else:
+				get_node(str(laser) + "/KinematicBody2D").move(Vector2(0,0))
+		
+		
 		laser_id += 1 
 	
 	
@@ -309,12 +309,14 @@ func start_game():
 	pass
 	
 func clear_lasers():
-	for laser in laser_array:
-		get_node(laser).queue_free()
+	for laser in laser_array:                      
+		if get_node(laser) != null:
+			get_node(laser).queue_free()
 	laser_array.clear()
 	
 func clear_rocks():
 	for rock in rock_array:
-		get_node(rock).queue_free()
+		if get_node(rock) !=    null:
+			get_node(rock).queue_free()
 	rock_array.clear()
 	
