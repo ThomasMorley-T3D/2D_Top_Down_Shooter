@@ -162,7 +162,7 @@ func run_game(delta):
 			print(rock_array)
 			if get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").get_collider() != null:
 				var node_path = get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").get_collider().get_parent().get_path()
-				print(get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").get_collider().get_parent().get_path())			
+				print(get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").get_collider().get_parent().get_path())
 				rock_array.remove(rock_array.find(get_node(node_path).get_name()))
 				get_node(node_path).queue_free()
 			
@@ -192,7 +192,7 @@ func run_game(delta):
 		var rock_pos = get_node(str(rock)).get_node("RigidBody2D").get_pos()
 		#print(rock_pos)
 		#print(get_node(str(rock)).get_node("RigidBody2D").get_linear_velocity())
-		if (rock_pos.y > 22600):
+		if (rock_pos.y > 2600):
 			rock_array.remove(rock_id)
 			get_node(rock).queue_free()
 			#print("Kill Rock!!!")  
@@ -248,10 +248,10 @@ func make_rock():
 	rock_instance.set_name("rock"+str(rock_count))
 	add_child(rock_instance)
 	rock_instance.set_owner(self)
-	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("bottom_boundry"))
-	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("top_boundry"))
-	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("left_boundry"))
-	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("right_boundry"))
+	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("bottom_ boundary"))
+	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("top_ boundary"))
+	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("left_ boundary"))
+	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("right_boundary"))
 	rock_instance.get_node("RigidBody2D").set_pos(Vector2(rand_range(110,1325),rand_range(-200,-250)))
 	rock_instance.get_node("RigidBody2D").set_linear_velocity(rock_velocity + Vector2(rand_range(-90,90),0))
 	if rand_range(0,2.1) < 1:
