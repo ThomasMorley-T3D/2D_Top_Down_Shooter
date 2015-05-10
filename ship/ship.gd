@@ -140,6 +140,7 @@ func run_game(delta):
 	var rock_node_path = null
 	var laser_node_path = null 
 	for laser in laser_array : 
+	
 		if  get_node(laser) != null:         
 			var laser_pos = get_node(laser).get_pos()
 			laser_pos.y = laser_pos.y - laser_speed * delta
@@ -153,7 +154,7 @@ func run_game(delta):
 				get_node(laser).queue_free()
 			
 						
-						#print( get_node(laser).get_path())
+						#print( get_node(laser).get_path()) 
 		if (get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").is_colliding()):
 			 
 			#  remove the rock_root from the array and delete the child from the main scene
@@ -222,7 +223,8 @@ func fire():
 	add_child(laser_instance)   
 	laser_instance.set_owner(self)
 	get_node("KinematicBody2D").add_collision_exception_with(laser_instance)    
-	get_node("laser" + str(laser_count) + "/KinematicBody2D").add_collision_exception_with(get_node("KinematicBody2D"))        
+	get_node("laser" + str(laser_count) + "/KinematicBody2D").add_collision_exception_with(get_node("KinematicBody2D"))
+	get_node("laser" + str(laser_count) + "/KinematicBody2D").add_collision_exception_with(get_node("top_ boundary"))         
 	laser_instance.set_pos(get_node("KinematicBody2D").get_pos()) 
 	laser_array.push_back("laser"+str(laser_count))  
 	                                                                                 
