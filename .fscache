@@ -1,0 +1,260 @@
+::res://::1431185782
+icon.png::ImageTexture::1427765660::
+::res://audio::1428538067
+22455__nathanshadow__thruster-level-ii.wav::Sample::1428480745::
+thrust.wav::Sample::1428538068::
+::res://fonts::1431147360
+modak.fnt::Font::1428890750::font<>fonts/chintzy-cpu/chintzy.ttf<>0adb5d6660cb510051843690521332be<>946778610
+::res://gui::1428905301
+gui.scn::PackedScene::1428905301::
+::res://laser::1431107775
+laser.scn::PackedScene::1431107775::
+laser2.scn::PackedScene::1428847900::
+laserGreen11.tex::ImageTexture::1428183418::texture_2d<>../Space Shooter/Images/PNG/Lasers/laserGreen11.png<>530e7fe8c167550230ed88e02a0d88cc<>1390988460
+::res://rock::1431118992
+large_rock.scn::PackedScene::1431118992::
+large_rock2.gd::GDScript::1428793628::
+large_rock2.scn::PackedScene::1428791248::
+large_rock3.scn::PackedScene::1428888692::
+rock.scn::PackedScene::1428378398::
+::res://rock/images::1428379119
+a10000.tex::ImageTexture::1428379004::texture_2d<>../Game Assets/asteroids/large/a10000.png<>9ad8b9a1d1f774dc2fe4346ab6a04846<>1391307036
+a10001.tex::ImageTexture::1428379004::texture_2d<>../Game Assets/asteroids/large/a10001.png<>9949f9210d9bc7f71dde960dbd851d17<>1391307036
+a10002.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10002.png<>47eae96478197b4cea48d8e48c63e036<>1391307036
+a10003.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10003.png<>2404be2ea14a4d257974b0709bc78536<>1391307036
+a10004.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10004.png<>d9bd8a3f3a06a72d2625e12bbfb7ced5<>1391307036
+a10005.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10005.png<>57ffe8349c22cea4af625204325784a3<>1391307038
+a10006.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10006.png<>7e645e39136698f1474cb8721284c030<>1391307038
+a10007.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10007.png<>1cff21197e8ad676166c82744ed1b772<>1391307038
+a10008.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10008.png<>78fcbece9d0f6a3f20a3c14b8965ae34<>1391307038
+a10009.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10009.png<>acce623151928cc586bcd6720b1afd59<>1391307038
+a10010.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10010.png<>4850d3644d08caf3450c53369965a9bc<>1391307038
+a10011.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10011.png<>1107d8e4f9d62ee368421ef05f6817f6<>1391307038
+a10012.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10012.png<>9df99ce7843f7b1b5112b00d2e3d3380<>1391307038
+a10013.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10013.png<>3b0b24cf398eac6dd395e635957cc3c0<>1391307038
+a10014.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10014.png<>a2e662f3eb2ac20372a8b2833e17126e<>1391307038
+a10015.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10015.png<>72be32c4dcd51705940c93e504b0308c<>1391307038
+a30000.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a30000.png<>a999b55cb9b6b66c8632c2aec14b0e60<>1391307082
+a30001.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a30001.png<>05765f5400a8832e98e5080ff6669f04<>1391307082
+a30002.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a30002.png<>e44fc6e0d6380a1a8c6d6f0ae5226b61<>1391307082
+a30003.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a30003.png<>3af0086258360bdac0144be49ef324f5<>1391307082
+a30004.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a30004.png<>014eeed3a051114efb5ac471adbc3495<>1391307082
+a30005.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a30005.png<>0117fd22249f9e4b9595de49d1631c70<>1391307082
+a30006.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a30006.png<>841bed4d1ba8fd9a22fce8c68706d8cb<>1391307082
+a30007.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a30007.png<>113003860428283f75253fb9f26b6be2<>1391307082
+a30008.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a30008.png<>610e74ff3d8a67c864ea7bf4dbc76340<>1391307082
+a30009.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a30009.png<>dbf73a3ef361e35b38b362c5d42e14b6<>1391307082
+a30010.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/a30010.png<>930de31b98e621a0515a291d3780e3f3<>1391307082
+a30011.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/a30011.png<>b290300c3f269a1946a24eb0d461aa66<>1391307082
+a30012.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/a30012.png<>b307920979da0a6ad131791dfbb0641e<>1391307082
+a30013.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/a30013.png<>dede045f027a4ac4844deaf9e4d79e94<>1391307082
+a30014.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/a30014.png<>7beba6a272062d4196f8b7da3f386a39<>1391307082
+a30015.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/a30015.png<>487fa90fa0151bffe485834a74bac592<>1391307082
+b10000.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10000.png<>6114bf3b0acb12ecbdae75a9fef38b7b<>1391307368
+b10001.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10001.png<>1696f8827236fdd89b986d4d7831acde<>1391307368
+b10002.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10002.png<>9267c70abcfc4cffebd197e8836a1ac6<>1391307368
+b10003.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10003.png<>885bba308ac3a24d027662853160f11c<>1391307368
+b10004.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10004.png<>d2e2775d5848070d56c475cc700b9d15<>1391307368
+b10005.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10005.png<>9d6c99c0847f46073edb40ce2b77ec52<>1391307368
+b10006.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10006.png<>a6625c4acf6b97ebfaec3b08385a5057<>1391307368
+b10007.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10007.png<>87b717e98ba65795a3ef326d6d765fe6<>1391307368
+b10008.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10008.png<>d0a481bf764cd114c1650b98ca9a2085<>1391307368
+b10009.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10009.png<>1b90122b095b708c745b4b2ee59bd407<>1391307368
+b10010.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10010.png<>4d9d174daf5ed4e9920c04ffa6c52e47<>1391307370
+b10011.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10011.png<>08019cdef595a4829427bd7f9286ab68<>1391307370
+b10012.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10012.png<>80fdd9b70f1afc17a4a8b4bd55993360<>1391307370
+b10013.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10013.png<>a8a61106e7f70ed363db9686c29aeaee<>1391307370
+b10014.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10014.png<>b67f63e27c4194a1b30b01a19ef0a7cb<>1391307370
+b10015.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b10015.png<>c5b1ae06053c42c24a1a5f774b5235bf<>1391307370
+b30000.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b30000.png<>523cab640ae366f0abc247bce808b827<>1391307302
+b30001.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b30001.png<>13c399f90d3c312a1dcffdee0136049a<>1391307302
+b30002.tex::ImageTexture::1428379006::texture_2d<>../Game Assets/asteroids/large/b30002.png<>b8dc454813929ef7e9702f498820fb1b<>1391307302
+b30003.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/b30003.png<>c0ec76af9cd0254668e703cdf6023d2b<>1391307302
+b30004.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/b30004.png<>c952bd5bd0b341538f220d72ea2de7e9<>1391307302
+b30005.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/b30005.png<>a8769cf367fa497a8f29727358eb32fe<>1391307302
+b30006.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/b30006.png<>99e4a5ad62cefe2a20637e13145a2457<>1391307302
+b30007.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/b30007.png<>25e047dc5cf7e23bf6e3858d8703d2ad<>1391307302
+b30008.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/b30008.png<>b8ae4cec6210ceeaec2135d2b6b16799<>1391307302
+b30009.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/b30009.png<>9f4fc3f2be8e344a6b4d501367ef949f<>1391307302
+b30010.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/b30010.png<>a9f8eee421dcccdea65a8a3a927e50c8<>1391307302
+b30011.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/b30011.png<>85c060ac80b9df07b40b0b0403279b6e<>1391307302
+b30012.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/b30012.png<>268a6b01e846a9832c8cf2ba10f01c9f<>1391307302
+b30013.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/b30013.png<>99cda767c3614821f42ba9cdcc295f50<>1391307302
+b30014.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/b30014.png<>8e59017f3ceeb3073cdba2ce4036d06d<>1391307302
+b30015.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/b30015.png<>8f5af75836b0a4c43269f8db5d26ccd8<>1391307302
+c10000.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/c10000.png<>fdb5873f8b59ac0da7f2dedf3e8fa3c6<>1391308888
+c10001.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/c10001.png<>eaf1ffb1e27c32fcb1d8e6e09002604a<>1391308888
+c10002.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/c10002.png<>f4bc771e43fdba043cd03a54a62ca782<>1391308890
+c10003.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/c10003.png<>8f7082f21c881c77553c8bad2f2c05d2<>1391308890
+c10004.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/c10004.png<>06c2ef0705e8ddcc30c09ab32c50c8d3<>1391308890
+c10005.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/c10005.png<>90595b7e4cc1725e5ccb1de05aaa81e1<>1391308890
+c10006.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/c10006.png<>2ec6e03b9b8dd6577429f2b423f05721<>1391308890
+c10007.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/c10007.png<>fab91998a0bf47ee2e52c8b261bf1bf0<>1391308890
+c10008.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/c10008.png<>119d9f809637f9f9d8718d4f8a1a3a10<>1391308890
+c10009.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/c10009.png<>1cd6f461ef919b77335f4dcd1dfde52c<>1391308890
+c10010.tex::ImageTexture::1428379007::texture_2d<>../Game Assets/asteroids/large/c10010.png<>e78ce797ba916096844f93fc9dab3f04<>1391308890
+c10011.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c10011.png<>08d03376fb22afb894f5271b66b55d5a<>1391308890
+c10012.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c10012.png<>a265e9e81b90ae12a3d4707ba9687c2a<>1391308890
+c10013.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c10013.png<>e2c96cc7142e9aca648cba75ac9c8369<>1391308890
+c10014.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c10014.png<>4e56d24817289710ac035056eabb53b6<>1391308890
+c10015.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c10015.png<>36cca0c93fa5a52085052b75d9fe192d<>1391308890
+c30000.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30000.png<>34789626da7ce50dc1adc06a6f051d74<>1391308938
+c30001.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30001.png<>bf6bbdc51e62f9526be5a53cff6aaffd<>1391308938
+c30002.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30002.png<>f26af94bfa19584f69b352dd30553b58<>1391308938
+c30003.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30003.png<>ee9d5502dc835505d15835e2fc7b7528<>1391308938
+c30004.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30004.png<>f0633836f8ccb623d5a39d70b10502b3<>1391308938
+c30005.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30005.png<>cead9a1a0ef250d80b906bb13b123ef7<>1391308938
+c30006.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30006.png<>ca7e3c3ce32a78a53dbd4986b75a0250<>1391308938
+c30007.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30007.png<>b69aa013332863516ca6792c87ef5ce8<>1391308938
+c30008.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30008.png<>bf02e42bba298d065d2c1dd142caa4da<>1391308938
+c30009.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30009.png<>c7487d17db4b2b6dc1c1926c6e82edae<>1391308938
+c30010.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30010.png<>f1a34bf523767d5259a5b251135513c6<>1391308938
+c30011.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30011.png<>ccd3d9fd3195164d339a8fab309b3746<>1391308940
+c30012.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30012.png<>d4e43463bcc055487d3c1fadcb3ff1db<>1391308940
+c30013.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30013.png<>a98c02e32daf8fadd8e0b141ac47164e<>1391308940
+c30014.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30014.png<>cef9c4e2b48f020f3323c9befaf0ae47<>1391308940
+c30015.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c30015.png<>403d414bdec225530f0c5961aa2a8b37<>1391308940
+c40000.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c40000.png<>f8147477a55cda4315f3cd9948a817c9<>1391308904
+c40001.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c40001.png<>4af931362f69909093c32139a384a9cc<>1391308904
+c40002.tex::ImageTexture::1428379008::texture_2d<>../Game Assets/asteroids/large/c40002.png<>1b88a356535e42707b4ad25e16349c42<>1391308904
+c40003.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40003.png<>325fe63b93a69b570dfedc898e6abe37<>1391308904
+c40004.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40004.png<>f0f1ab8aa4730437edab69a9fb3d537c<>1391308904
+c40005.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40005.png<>07ddc0d3e4cabb5d711f285a12cb9610<>1391308904
+c40006.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40006.png<>72e310e3e42743d2508381019cafa65f<>1391308906
+c40007.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40007.png<>8ed6f128eb63f61595ade3ff8b2c8e42<>1391308906
+c40008.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40008.png<>f163a26f04ab1472bb136953fef2adda<>1391308906
+c40009.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40009.png<>fbf1ce3189324cbfd3ddfa568c79f4e1<>1391308906
+c40010.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40010.png<>19ce4d8a3b26ee909d5013003d5bfa9f<>1391308906
+c40011.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40011.png<>7accd78fc09897951754475eb1549162<>1391308906
+c40012.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40012.png<>a1b0242ac11404c6aac74b5699498a4d<>1391308906
+c40013.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40013.png<>5d205dadac78055ef5ebf3ef6a5bbede<>1391308906
+c40014.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40014.png<>bbd375f421082b7d3081773f18d3b5cf<>1391308906
+c40015.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40015.png<>ef0d6999b0803937fdfd3df339253ca9<>1391308906
+::res://rock/images/large::1427525212
+a10000.png::ImageTexture::1391307036::
+a10001.png::ImageTexture::1391307036::
+a10002.png::ImageTexture::1391307036::
+a10003.png::ImageTexture::1391307036::
+a10004.png::ImageTexture::1391307036::
+a10005.png::ImageTexture::1391307038::
+a10006.png::ImageTexture::1391307038::
+a10007.png::ImageTexture::1391307038::
+a10008.png::ImageTexture::1391307038::
+a10009.png::ImageTexture::1391307038::
+a10010.png::ImageTexture::1391307038::
+a10011.png::ImageTexture::1391307038::
+a10012.png::ImageTexture::1391307038::
+a10013.png::ImageTexture::1391307038::
+a10014.png::ImageTexture::1391307038::
+a10015.png::ImageTexture::1391307038::
+a30000.png::ImageTexture::1391307082::
+a30001.png::ImageTexture::1391307082::
+a30002.png::ImageTexture::1391307082::
+a30003.png::ImageTexture::1391307082::
+a30004.png::ImageTexture::1391307082::
+a30005.png::ImageTexture::1391307082::
+a30006.png::ImageTexture::1391307082::
+a30007.png::ImageTexture::1391307082::
+a30008.png::ImageTexture::1391307082::
+a30009.png::ImageTexture::1391307082::
+a30010.png::ImageTexture::1391307082::
+a30011.png::ImageTexture::1391307082::
+a30012.png::ImageTexture::1391307082::
+a30013.png::ImageTexture::1391307082::
+a30014.png::ImageTexture::1391307082::
+a30015.png::ImageTexture::1391307082::
+b10000.png::ImageTexture::1391307368::
+b10001.png::ImageTexture::1391307368::
+b10002.png::ImageTexture::1391307368::
+b10003.png::ImageTexture::1391307368::
+b10004.png::ImageTexture::1391307368::
+b10005.png::ImageTexture::1391307368::
+b10006.png::ImageTexture::1391307368::
+b10007.png::ImageTexture::1391307368::
+b10008.png::ImageTexture::1391307368::
+b10009.png::ImageTexture::1391307368::
+b10010.png::ImageTexture::1391307370::
+b10011.png::ImageTexture::1391307370::
+b10012.png::ImageTexture::1391307370::
+b10013.png::ImageTexture::1391307370::
+b10014.png::ImageTexture::1391307370::
+b10015.png::ImageTexture::1391307370::
+b30000.png::ImageTexture::1391307302::
+b30001.png::ImageTexture::1391307302::
+b30002.png::ImageTexture::1391307302::
+b30003.png::ImageTexture::1391307302::
+b30004.png::ImageTexture::1391307302::
+b30005.png::ImageTexture::1391307302::
+b30006.png::ImageTexture::1391307302::
+b30007.png::ImageTexture::1391307302::
+b30008.png::ImageTexture::1391307302::
+b30009.png::ImageTexture::1391307302::
+b30010.png::ImageTexture::1391307302::
+b30011.png::ImageTexture::1391307302::
+b30012.png::ImageTexture::1391307302::
+b30013.png::ImageTexture::1391307302::
+b30014.png::ImageTexture::1391307302::
+b30015.png::ImageTexture::1391307302::
+c10000.png::ImageTexture::1391308888::
+c10001.png::ImageTexture::1391308888::
+c10002.png::ImageTexture::1391308890::
+c10003.png::ImageTexture::1391308890::
+c10004.png::ImageTexture::1391308890::
+c10005.png::ImageTexture::1391308890::
+c10006.png::ImageTexture::1391308890::
+c10007.png::ImageTexture::1391308890::
+c10008.png::ImageTexture::1391308890::
+c10009.png::ImageTexture::1391308890::
+c10010.png::ImageTexture::1391308890::
+c10011.png::ImageTexture::1391308890::
+c10012.png::ImageTexture::1391308890::
+c10013.png::ImageTexture::1391308890::
+c10014.png::ImageTexture::1391308890::
+c10015.png::ImageTexture::1391308890::
+c30000.png::ImageTexture::1391308938::
+c30001.png::ImageTexture::1391308938::
+c30002.png::ImageTexture::1391308938::
+c30003.png::ImageTexture::1391308938::
+c30004.png::ImageTexture::1391308938::
+c30005.png::ImageTexture::1391308938::
+c30006.png::ImageTexture::1391308938::
+c30007.png::ImageTexture::1391308938::
+c30008.png::ImageTexture::1391308938::
+c30009.png::ImageTexture::1391308938::
+c30010.png::ImageTexture::1391308938::
+c30011.png::ImageTexture::1391308940::
+c30012.png::ImageTexture::1391308940::
+c30013.png::ImageTexture::1391308940::
+c30014.png::ImageTexture::1391308940::
+c30015.png::ImageTexture::1391308940::
+c40000.png::ImageTexture::1391308904::
+c40001.png::ImageTexture::1391308904::
+c40002.png::ImageTexture::1391308904::
+c40003.png::ImageTexture::1391308904::
+c40004.png::ImageTexture::1391308904::
+c40005.png::ImageTexture::1391308904::
+c40006.png::ImageTexture::1391308906::
+c40007.png::ImageTexture::1391308906::
+c40008.png::ImageTexture::1391308906::
+c40009.png::ImageTexture::1391308906::
+c40010.png::ImageTexture::1391308906::
+c40011.png::ImageTexture::1391308906::
+c40012.png::ImageTexture::1391308906::
+c40013.png::ImageTexture::1391308906::
+c40014.png::ImageTexture::1391308906::
+c40015.png::ImageTexture::1391308906::
+::res://ship::1431186428
+Background.png::ImageTexture::1428134912::
+Butterfly.msh::Mesh::1428035037::mesh<>../../../Blender/Downloaded Objects/Butterfly/Butterfly.obj<>ee8be983d5d6eb17e6e21ffcc3c7e45f<>946677600
+Femal_Base_Mesh.msh::Mesh::1428035192::mesh<>../../../Blender/Downloaded Objects/High Poly Female Base Mesh/Femal_Base_Mesh.obj<>0df3be342031e6ef6c253f34c044a999<>1384046842
+SSD.msh::Mesh::1428037993::mesh<>./SSD.obj<>10f86a7ae8fb84f043e83de195e72438<>1428037741
+alien2.tex::ImageTexture::1427766499::texture_2d<>../Game Assets/spritelib_gpl/shooter/alien2.png<>aa06fd44458d1da8db6ac63927347a38<>1427525358
+cool fire.png::ImageTexture::1428132928::
+p.gd::GDScript::1427770904::
+ship.gd::GDScript::1431186428::
+ship.scn::PackedScene::1431116393::
+::res://sound::1428758378
+explosion.smp::Sample::1428476188::sample<>../Space Shooter/Audio/explosion.wav<>42c5a735d640dfc171ca9db4cdb14c97<>1426658402
+shoot_small.smp::Sample::1428476311::sample<>../Space Shooter/Audio/shoot_small.wav<>d992b03db9df4fa9f7a6e07dd1a4c0e4<>1426451610
+sound.scn::PackedScene::1428758378::
+thrust.smp::Sample::1428538097::sample<>audio/thrust.wav<>847f0e8f7574d2b9dcaac809d922e62c<>1428538068
