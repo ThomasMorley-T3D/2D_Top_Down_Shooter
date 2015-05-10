@@ -177,12 +177,10 @@ func run_game(delta):
 				score += 10
 				increase_gui_score(score)
 			else:
-				get_node(str(laser) + "/KinematicBody2D").move(Vector2(0,0))
+				get_node(str(laser) + "/KinematicBody2D").move(Vector2(0,-1))
 		
 		
 		laser_id += 1 
-	
-	
 	
 	#Check to see if rock is out of bounds and delete it if it is.
 	var rock_id = 0
@@ -224,7 +222,7 @@ func fire():
 	laser_instance.set_owner(self)
 	get_node("KinematicBody2D").add_collision_exception_with(laser_instance)    
 	get_node("laser" + str(laser_count) + "/KinematicBody2D").add_collision_exception_with(get_node("KinematicBody2D"))
-	get_node("laser" + str(laser_count) + "/KinematicBody2D").add_collision_exception_with(get_node("top_ boundary"))         
+	get_node("laser" + str(laser_count) + "/KinematicBody2D").add_collision_exception_with(get_node("top_boundary"))         
 	laser_instance.set_pos(get_node("KinematicBody2D").get_pos()) 
 	laser_array.push_back("laser"+str(laser_count))  
 	                                                                                 
@@ -248,10 +246,10 @@ func make_rock():
 	rock_instance.set_name("rock"+str(rock_count))
 	add_child(rock_instance)
 	rock_instance.set_owner(self)
-	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("bottom_ boundary"))
-	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("top_ boundary"))
-	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("left_ boundary"))
-	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("right_bounda ry"))
+	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("bottom_boundary"))
+	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("top_boundary"))
+	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("left_boundary"))
+	rock_instance.get_node("RigidBody2D").add_collision_exception_with(get_node("right_boundary"))
 	rock_instance.get_node("RigidBody2D").set_pos(Vector2(rand_range(110,1325),rand_range(-200,-250)))
 	rock_instance.get_node("RigidBody2D").set_linear_velocity(rock_velocity + Vector2(rand_range(-90,90),0))
 	if rand_range(0,2.1) < 1:
@@ -313,10 +311,12 @@ func clear_lasers():
 		if get_node(laser) != null:
 			get_node(laser).queue_free()
 	laser_array.clear()
+	laser_count = 0
 	
 func clear_rocks():
 	for rock in rock_array:
 		if get_node(rock) !=    null:
 			get_node(rock).queue_free()
 	rock_array.clear()
+	rock_count = 0
 	
