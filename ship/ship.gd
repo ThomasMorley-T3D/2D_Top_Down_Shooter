@@ -18,6 +18,11 @@ extends Node
 var game_running = false
 
 #Preload the gui sceene and set vars.
+var game_particles = preload("res://particles/particles.xml")
+var explosions = 0
+
+
+#Preload the gui sceene and set vars.
 var gui = preload("res://gui/gui.scn")
 var score = 0
 var high_score = 0
@@ -50,7 +55,7 @@ func _ready():
 	var gui_root = gui.instance()
 	add_child(gui_root)
 	gui_root.set_owner(self)
-	
+
 	
 # The fixed process function is called once every physic frame:
 func _fixed_process(delta):
@@ -66,40 +71,40 @@ func run_game(delta):
 	
 	# Check for key input and move ship
 	if (Input.is_action_pressed("ui_up")):
-		get_node("KinematicBody2D/Sprite/thrust_up").show()
+		get_node("KinematicBody2D/Sprite/thrust_up").set_emitting(true)
 		if ! get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_thrust/").is_active(): 
 			thrust_sound_channel = get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_thrust/").play("thrust",false)
 		move(current_speed.x, -ship_speed, acceleration, delta)
 		
 	else:
-		get_node("KinematicBody2D/Sprite/thrust_up").hide()
+		get_node("KinematicBody2D/Sprite/thrust_up").set_emitting(false)
 		
 	if (Input.is_action_pressed("ui_down")):
 		if ! get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_thrust/").is_active(): 
 			thrust_sound_channel = get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_thrust/").play("thrust",false)
 			
-		get_node("KinematicBody2D/Sprite/thrust_down_1").show()
-		get_node("KinematicBody2D/Sprite/thrust_down_2").show()
+		get_node("KinematicBody2D/Sprite/thrust_down_1").set_emitting(true)
+		get_node("KinematicBody2D/Sprite/thrust_down_2").set_emitting(true)
 		move(current_speed.x, ship_speed, acceleration, delta)
 	else:
-		get_node("KinematicBody2D/Sprite/thrust_down_1").hide()
-		get_node("KinematicBody2D/Sprite/thrust_down_2").hide()
+		get_node("KinematicBody2D/Sprite/thrust_down_1").set_emitting(false)
+		get_node("KinematicBody2D/Sprite/thrust_down_2").set_emitting(false)
 		
 	if (Input.is_action_pressed("ui_left")):
-		get_node("KinematicBody2D/Sprite/thrust_left").show()
+		get_node("KinematicBody2D/Sprite/thrust_left").set_emitting(true)
 		move(-ship_speed, current_speed.y, acceleration, delta)
 		if ! get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_thrust/").is_active(): 
 			thrust_sound_channel = get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_thrust/").play("thrust",false)
 	else:
-		get_node("KinematicBody2D/Sprite/thrust_left").hide()
+		get_node("KinematicBody2D/Sprite/thrust_left").set_emitting(false)
 		
 	if (Input.is_action_pressed("ui_right")):
-		get_node("KinematicBody2D/Sprite/thrust_right").show()
+		get_node("KinematicBody2D/Sprite/thrust_right").set_emitting(true)
 		move(ship_speed, current_speed.y, acceleration, delta)
 		if ! get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_thrust/").is_active(): 
 			thrust_sound_channel = get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_thrust/").play("thrust",false)
 	else:
-		get_node("KinematicBody2D/Sprite/thrust_right").hide()
+		get_node("KinematicBody2D/Sprite/thrust_right").set_emitting(false)
 		
 	if (! Input.is_action_pressed("ui_up")) and (! Input.is_action_pressed("ui_down")) \
 		and (! Input.is_action_pressed("ui_left")) and (! Input.is_action_pressed("ui_right")):
@@ -165,6 +170,14 @@ func run_game(delta):
 					print(get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").get_collider().get_parent().get_path())
 					rock_array.remove(rock_array.find(get_node(node_path).get_name()))
 					get_node(node_path).queue_free()
+					
+					var the_particles = game_particles.instance()
+					the_particles.set_name(str(explosions))
+					add_child(the_particles)
+					the_particles.set_owner(self)
+					get_node(str(the_particles.get_path()) + "/Explosion").set_pos(get_node("/root/ship_root/" + str(laser) + "/KinematicBody2D").get_collider().get_global_pos())
+					get_node(str(the_particles.get_path()) + "/Explosion").set_emitting(true)
+					explosions += 1
 				
 				#remove the laser_root from the array and delete the child from the main scene
 				laser_array.remove(laser_array.find(laser))
@@ -204,6 +217,7 @@ func _input(event):
 	if event.is_action("space") && event.is_pressed() && !event.is_echo() && game_running:
 		fire()
 		get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_laser").play("shoot_small",false)
+
 		
 		
 # create a move function with acceleration/deceleration:
@@ -285,11 +299,11 @@ func end_game():
 	
 	get_node("/root/ship_root/gui_root/game_over_lbl").show()
 	get_node("KinematicBody2D").set_pos(Vector2(740,2075))
-	get_node("KinematicBody2D/Sprite/thrust_down_1").hide()
-	get_node("KinematicBody2D/Sprite/thrust_down_2").hide()
-	get_node("KinematicBody2D/Sprite/thrust_left").hide()
-	get_node("KinematicBody2D/Sprite/thrust_right").hide()
-	get_node("KinematicBody2D/Sprite/thrust_up").show()
+	get_node("KinematicBody2D/Sprite/thrust_down_1").set_emitting(false)
+	get_node("KinematicBody2D/Sprite/thrust_down_2").set_emitting(false)
+	get_node("KinematicBody2D/Sprite/thrust_left").set_emitting(false)
+	get_node("KinematicBody2D/Sprite/thrust_right").set_emitting(false)
+	get_node("KinematicBody2D/Sprite/thrust_up").set_emitting(true)
 	
 func start_game():
 	# code to reset the game here
@@ -299,6 +313,7 @@ func start_game():
 	rock_velocity = Vector2(0,90)
 	wait_time = 1.0
 	score = 0
+	explosions = 0
 	current_speed = Vector2(0,0)
 	increase_gui_score(score)
 	clear_rocks()
