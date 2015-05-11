@@ -154,7 +154,7 @@ func run_game(delta):
 			if laser_pos.y + 100 < get_node("KinematicBody2D").get_pos().y:
 				get_node(str(laser) + "/KinematicBody2D").set_layer_mask(1)
 			#remove the laser_root from the array and delete the child from the main scene if off top of screen
-			if laser_pos.y < -100:
+			if get_node(laser).get_global_pos().y < 200:
 				laser_array.remove(laser_array.find(laser))
 				get_node(laser).queue_free()
 				
