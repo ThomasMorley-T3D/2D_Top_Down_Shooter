@@ -36,7 +36,7 @@ var laser_array = []
 var thrust_sound_channel = 100
 
 # preload the rock sceene and set rock vars.
-var rock = preload("res://rock/large_rock.scn")
+var rock = preload("res://rock/rock.scn")
 var rock_count = 0
 var rock_array = []
 var rock_velocity = Vector2(0,90)
@@ -190,7 +190,7 @@ func run_game(delta):
 				score += 10
 				increase_gui_score(score)
 			else:
-				get_node(str(laser) + "/KinematicBody2D").move(Vector2(0,-1))
+				get_node(str(laser) + "/KinematicBody2D").move(Vector2(0,-3))
 		
 		
 		laser_id += 1 
@@ -267,9 +267,11 @@ func make_rock():
 	rock_instance.get_node("RigidBody2D").set_pos(Vector2(rand_range(110,1325),rand_range(-200,-250)))
 	rock_instance.get_node("RigidBody2D").set_linear_velocity(rock_velocity + Vector2(rand_range(-90,90),0))
 	if rand_range(0,2.1) < 1:
-		rock_instance.get_node("RigidBody2D/AnimatedSprite/anim").set_speed(rand_range(.8,1))
+		print(rock_instance.get_path())
+		rock_instance.get_node("RigidBody2D/AnimatedSprite/anim").set_speed(rand_range(.3,1))
 	else:
-		rock_instance.get_node("RigidBody2D/AnimatedSprite/anim").set_speed(rand_range(-.8,-1))
+		print(rock_instance.get_children())
+		rock_instance.get_node("RigidBody2D/AnimatedSprite/anim").set_speed(rand_range(-.3,-1))
 	rock_array.push_back("rock"+str(rock_count))
 
 

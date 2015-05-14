@@ -1,23 +1,29 @@
-::res://::1431329928
+::res://::1431646745
 icon.png::ImageTexture::1427765660::
 ::res://audio::1428538067
 22455__nathanshadow__thruster-level-ii.wav::Sample::1428480745::
 thrust.wav::Sample::1428538068::
-::res://fonts::1431147360
-modak.fnt::Font::1428890750::font<>fonts/chintzy-cpu/chintzy.ttf<>0adb5d6660cb510051843690521332be<>946778610
-::res://gui::1428905301
-gui.scn::PackedScene::1428905301::
-::res://laser::1431319228
-laser.scn::PackedScene::1431319228::
+::res://fonts::1431487168
+modak.fnt::Font::1428890750::font<>fonts/chintzy-cpu/chintzy.ttf<>0adb5d6660cb510051843690521332be<>0
+::res://gui::1431571154
+gui.scn::PackedScene::1431571154::
+::res://laser::1431646482
+laser.scn::PackedScene::1431646482::
 laser2.scn::PackedScene::1428847900::
 laserGreen11.tex::ImageTexture::1428183418::texture_2d<>../Space Shooter/Images/PNG/Lasers/laserGreen11.png<>530e7fe8c167550230ed88e02a0d88cc<>1390988460
-::res://rock::1431118992
-large_rock.scn::PackedScene::1431118992::
+::res://rock::1431646437
+large_rock (copy).scn::PackedScene::1431495574::
+large_rock.gd::GDScript::1431646437::
+large_rock.scn::PackedScene::1431646437::
+large_rock2 (copy).gd::GDScript::1428793628::
 large_rock2.gd::GDScript::1428793628::
-large_rock2.scn::PackedScene::1428791248::
-large_rock3.scn::PackedScene::1428888692::
-rock.scn::PackedScene::1428378398::
-::res://rock/images::1428379119
+medium_rock.gd::GDScript::1431646437::
+medium_rock.scn::PackedScene::1431646198::
+rock.gd::GDScript::1431563286::
+rock.scn::PackedScene::1431563286::
+small_rock.gd::GDScript::1431646437::
+small_rock.scn::PackedScene::1431646186::
+::res://rock/images::1431646871
 a10000.tex::ImageTexture::1428379004::texture_2d<>../Game Assets/asteroids/large/a10000.png<>9ad8b9a1d1f774dc2fe4346ab6a04846<>1391307036
 a10001.tex::ImageTexture::1428379004::texture_2d<>../Game Assets/asteroids/large/a10001.png<>9949f9210d9bc7f71dde960dbd851d17<>1391307036
 a10002.tex::ImageTexture::1428379005::texture_2d<>../Game Assets/asteroids/large/a10002.png<>47eae96478197b4cea48d8e48c63e036<>1391307036
@@ -130,120 +136,7 @@ c40012.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large
 c40013.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40013.png<>5d205dadac78055ef5ebf3ef6a5bbede<>1391308906
 c40014.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40014.png<>bbd375f421082b7d3081773f18d3b5cf<>1391308906
 c40015.tex::ImageTexture::1428379009::texture_2d<>../Game Assets/asteroids/large/c40015.png<>ef0d6999b0803937fdfd3df339253ca9<>1391308906
-::res://rock/images/large::1427525212
-a10000.png::ImageTexture::1391307036::
-a10001.png::ImageTexture::1391307036::
-a10002.png::ImageTexture::1391307036::
-a10003.png::ImageTexture::1391307036::
-a10004.png::ImageTexture::1391307036::
-a10005.png::ImageTexture::1391307038::
-a10006.png::ImageTexture::1391307038::
-a10007.png::ImageTexture::1391307038::
-a10008.png::ImageTexture::1391307038::
-a10009.png::ImageTexture::1391307038::
-a10010.png::ImageTexture::1391307038::
-a10011.png::ImageTexture::1391307038::
-a10012.png::ImageTexture::1391307038::
-a10013.png::ImageTexture::1391307038::
-a10014.png::ImageTexture::1391307038::
-a10015.png::ImageTexture::1391307038::
-a30000.png::ImageTexture::1391307082::
-a30001.png::ImageTexture::1391307082::
-a30002.png::ImageTexture::1391307082::
-a30003.png::ImageTexture::1391307082::
-a30004.png::ImageTexture::1391307082::
-a30005.png::ImageTexture::1391307082::
-a30006.png::ImageTexture::1391307082::
-a30007.png::ImageTexture::1391307082::
-a30008.png::ImageTexture::1391307082::
-a30009.png::ImageTexture::1391307082::
-a30010.png::ImageTexture::1391307082::
-a30011.png::ImageTexture::1391307082::
-a30012.png::ImageTexture::1391307082::
-a30013.png::ImageTexture::1391307082::
-a30014.png::ImageTexture::1391307082::
-a30015.png::ImageTexture::1391307082::
-b10000.png::ImageTexture::1391307368::
-b10001.png::ImageTexture::1391307368::
-b10002.png::ImageTexture::1391307368::
-b10003.png::ImageTexture::1391307368::
-b10004.png::ImageTexture::1391307368::
-b10005.png::ImageTexture::1391307368::
-b10006.png::ImageTexture::1391307368::
-b10007.png::ImageTexture::1391307368::
-b10008.png::ImageTexture::1391307368::
-b10009.png::ImageTexture::1391307368::
-b10010.png::ImageTexture::1391307370::
-b10011.png::ImageTexture::1391307370::
-b10012.png::ImageTexture::1391307370::
-b10013.png::ImageTexture::1391307370::
-b10014.png::ImageTexture::1391307370::
-b10015.png::ImageTexture::1391307370::
-b30000.png::ImageTexture::1391307302::
-b30001.png::ImageTexture::1391307302::
-b30002.png::ImageTexture::1391307302::
-b30003.png::ImageTexture::1391307302::
-b30004.png::ImageTexture::1391307302::
-b30005.png::ImageTexture::1391307302::
-b30006.png::ImageTexture::1391307302::
-b30007.png::ImageTexture::1391307302::
-b30008.png::ImageTexture::1391307302::
-b30009.png::ImageTexture::1391307302::
-b30010.png::ImageTexture::1391307302::
-b30011.png::ImageTexture::1391307302::
-b30012.png::ImageTexture::1391307302::
-b30013.png::ImageTexture::1391307302::
-b30014.png::ImageTexture::1391307302::
-b30015.png::ImageTexture::1391307302::
-c10000.png::ImageTexture::1391308888::
-c10001.png::ImageTexture::1391308888::
-c10002.png::ImageTexture::1391308890::
-c10003.png::ImageTexture::1391308890::
-c10004.png::ImageTexture::1391308890::
-c10005.png::ImageTexture::1391308890::
-c10006.png::ImageTexture::1391308890::
-c10007.png::ImageTexture::1391308890::
-c10008.png::ImageTexture::1391308890::
-c10009.png::ImageTexture::1391308890::
-c10010.png::ImageTexture::1391308890::
-c10011.png::ImageTexture::1391308890::
-c10012.png::ImageTexture::1391308890::
-c10013.png::ImageTexture::1391308890::
-c10014.png::ImageTexture::1391308890::
-c10015.png::ImageTexture::1391308890::
-c30000.png::ImageTexture::1391308938::
-c30001.png::ImageTexture::1391308938::
-c30002.png::ImageTexture::1391308938::
-c30003.png::ImageTexture::1391308938::
-c30004.png::ImageTexture::1391308938::
-c30005.png::ImageTexture::1391308938::
-c30006.png::ImageTexture::1391308938::
-c30007.png::ImageTexture::1391308938::
-c30008.png::ImageTexture::1391308938::
-c30009.png::ImageTexture::1391308938::
-c30010.png::ImageTexture::1391308938::
-c30011.png::ImageTexture::1391308940::
-c30012.png::ImageTexture::1391308940::
-c30013.png::ImageTexture::1391308940::
-c30014.png::ImageTexture::1391308940::
-c30015.png::ImageTexture::1391308940::
-c40000.png::ImageTexture::1391308904::
-c40001.png::ImageTexture::1391308904::
-c40002.png::ImageTexture::1391308904::
-c40003.png::ImageTexture::1391308904::
-c40004.png::ImageTexture::1391308904::
-c40005.png::ImageTexture::1391308904::
-c40006.png::ImageTexture::1391308906::
-c40007.png::ImageTexture::1391308906::
-c40008.png::ImageTexture::1391308906::
-c40009.png::ImageTexture::1391308906::
-c40010.png::ImageTexture::1391308906::
-c40011.png::ImageTexture::1391308906::
-c40012.png::ImageTexture::1391308906::
-c40013.png::ImageTexture::1391308906::
-c40014.png::ImageTexture::1391308906::
-c40015.png::ImageTexture::1391308906::
-::res://ship::1431329954
+::res://ship::1431646897
 Background.png::ImageTexture::1428134912::
 Butterfly.msh::Mesh::1428035037::mesh<>../../../Blender/Downloaded Objects/Butterfly/Butterfly.obj<>ee8be983d5d6eb17e6e21ffcc3c7e45f<>946677600
 Femal_Base_Mesh.msh::Mesh::1428035192::mesh<>../../../Blender/Downloaded Objects/High Poly Female Base Mesh/Femal_Base_Mesh.obj<>0df3be342031e6ef6c253f34c044a999<>1384046842
@@ -251,8 +144,8 @@ SSD.msh::Mesh::1428037993::mesh<>./SSD.obj<>10f86a7ae8fb84f043e83de195e72438<>14
 alien2.tex::ImageTexture::1427766499::texture_2d<>../Game Assets/spritelib_gpl/shooter/alien2.png<>aa06fd44458d1da8db6ac63927347a38<>1427525358
 cool fire.png::ImageTexture::1428132928::
 p.gd::GDScript::1427770904::
-ship.gd::GDScript::1431329954::
-ship.scn::PackedScene::1431329143::
+ship.gd::GDScript::1431646897::
+ship.scn::PackedScene::1431646262::
 ::res://sound::1428758378
 explosion.smp::Sample::1428476188::sample<>../Space Shooter/Audio/explosion.wav<>42c5a735d640dfc171ca9db4cdb14c97<>1426658402
 shoot_small.smp::Sample::1428476311::sample<>../Space Shooter/Audio/shoot_small.wav<>d992b03db9df4fa9f7a6e07dd1a4c0e4<>1426451610
