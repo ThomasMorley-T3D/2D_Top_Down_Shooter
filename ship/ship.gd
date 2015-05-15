@@ -18,7 +18,7 @@ extends Node
 var game_running = false
 
 #Preload the gui sceene and set vars.
-var game_particles = preload("res://particles/particles.xml")
+var game_particles = preload("res://particles/particles.scn")
 var explosions = 0
 
 
