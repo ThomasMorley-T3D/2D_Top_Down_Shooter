@@ -17,7 +17,7 @@ extends Node
 
 var game_running = false
 
-#Preload the gui sceene and set vars.
+#Preload the particles sceene and set vars.
 var game_particles = preload("res://particles/particles.scn")
 var explosions = 0
 
@@ -109,7 +109,8 @@ func run_game(delta):
 	if (! Input.is_action_pressed("ui_up")) and (! Input.is_action_pressed("ui_down")) \
 		and (! Input.is_action_pressed("ui_left")) and (! Input.is_action_pressed("ui_right")):
 		move(0, 0, acceleration, delta)
-		get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_thrust/").stop(thrust_sound_channel)
+		if (get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_thrust/").is_active()):#stop(thrust_sound_channel)
+			get_node("/root/ship_root/KinematicBody2D/sound_root/SamplePlayer_thrust/").stop(thrust_sound_channel)
 		
 		
 	# Check for ship collision and end game if colliding with a rock.
@@ -233,8 +234,7 @@ func fire():
 	laser_instance.set_name("laser"+str(laser_count))
 	laser_instance.set_scale(Vector2(2,2))
 	add_child(laser_instance)   
-	laser_instance.set_owner(self)
-	get_node("KinematicBody2D").add_collision_exception_with(laser_instance)    
+	laser_instance.set_owner(self)  
 	get_node("laser" + str(laser_count) + "/KinematicBody2D").add_collision_exception_with(get_node("KinematicBody2D"))
 	get_node("laser" + str(laser_count) + "/KinematicBody2D").add_collision_exception_with(get_node("top_boundary"))         
 	laser_instance.set_pos(get_node("KinematicBody2D").get_pos()) 
@@ -268,10 +268,10 @@ func make_rock():
 	rock_instance.get_node("RigidBody2D").set_linear_velocity(rock_velocity + Vector2(rand_range(-90,90),0))
 	if rand_range(0,2.1) < 1:
 		print(rock_instance.get_path())
-		rock_instance.get_node("RigidBody2D/AnimatedSprite/anim").set_speed(rand_range(.3,1))
+		rock_instance.get_node("RigidBody2D").set_angular_velocity(rand_range(3,10))
 	else:
 		print(rock_instance.get_children())
-		rock_instance.get_node("RigidBody2D/AnimatedSprite/anim").set_speed(rand_range(-.3,-1))
+		rock_instance.get_node("RigidBody2D").set_angular_velocity(rand_range(-3,-10))
 	rock_array.push_back("rock"+str(rock_count))
 
 
